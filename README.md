@@ -2,7 +2,7 @@
 
 A full-stack SEO analysis tool that automates keyword research using **n8n**, **Google Gemini**, and **SerpApi**.
 
-![Project Screenshot](https://via.placeholder.com/800x400?text=n8n+SEO+Analyzer+Demo)
+![Project Screenshot](images/ui.png)
 *(Replace this link with a screenshot of your actual dashboard)*
 
 ## 🌟 Features
@@ -50,5 +50,3 @@ A full-stack SEO analysis tool that automates keyword research using **n8n**, **
     ```
 3.  Open `http://127.0.0.1:8080`.
 
-## 📸 Demo
-Check out the video demo [here](#) *(Link to your LinkedIn/YouTube video)*.
