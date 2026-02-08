@@ -4,6 +4,10 @@ A full-stack SEO analysis tool that automates keyword research using **n8n**, **
 
 ![Project Screenshot](images/ui.png)
 
+## ⚙️ Workflow Logic
+![n8n Workflow](images/workflow.png)
+*The automated flow: Webhook → SerpApi → Data Cleaning → Groq AI → Supabase*
+
 ## 🌟 Features
 *   **Live SERP Data**: Fetches top 10 Google results using SerpApi.
 *   **AI Analysis**: Uses Google Gemini Pro to determine Search Intent (Informational/Commercial) and calculate a Difficulty Score.
