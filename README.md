@@ -18,11 +18,11 @@ A full-stack SEO analysis tool that automates keyword research using **n8n**, **
 *   **Database**: Supabase
 *   **Frontend**: HTML5, CSS3 (Glassmorphism), Vanilla JavaScript
 
-## �️ Database Schema
+## 🗄️ Database Schema
 ![Supabase Table](images/supabase.png)
 *Archived SEO reports in Supabase*
 
-## �📂 Project Structure
+## 📂 Project Structure
 ```
 ├── frontend/
 │   ├── index.html      # Main user interface
@@ -42,8 +42,7 @@ A full-stack SEO analysis tool that automates keyword research using **n8n**, **
     *   **Groq API**: Get a free key from [console.groq.com](https://console.groq.com/).
         *   **Important**: You must set an environment variable `GROQ_API_KEY` in your n8n instance, or manually paste the key into the "Authorization" header in the *AI Analysis* node (replacing `{{$env.GROQ_API_KEY}}`).
     *   **Supabase**: Create a project and table `seo_reports`.
-        ![Supabase Table Schema](images/supabase.png)
-        *Ensure your `seo_reports` table matches this schema.*
+
 4.  Activate the workflow.
 
 ### 2. Frontend
