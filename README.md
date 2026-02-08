@@ -1,6 +1,6 @@
 # n8n AI SEO Analyzer 🚀
 
-A full-stack SEO analysis tool that automates keyword research using **n8n**, **Google Gemini**, and **SerpApi**.
+A full-stack SEO analysis tool that automates keyword research using **n8n**, **Groq (Llama 3)**, and **SerpApi**.
 
 ![Project Screenshot](images/ui.png)
 
@@ -10,7 +10,7 @@ A full-stack SEO analysis tool that automates keyword research using **n8n**, **
 
 ## 🌟 Features
 *   **Live SERP Data**: Fetches top 10 Google results using SerpApi.
-*   **AI Analysis**: Uses Google Gemini Pro to determine Search Intent (Informational/Commercial) and calculate a Difficulty Score.
+*   **AI Analysis**: Uses **Groq (Llama 3)** to determine Search Intent (Informational/Commercial) and calculate a Difficulty Score.
 *   **Competitor Extraction**: Identifies top domain competitors automatically.
 *   **Database Archiving**: Saves all reports to a Supabase (PostgreSQL) database.
 *   **Modern UI**: Responsive frontend with glassmorphism design.
