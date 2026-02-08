@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n8n SEO Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>n8n SEO Analyzer</h1>
+            <p>Enter a keyword to generate an AI-powered SEO report.</p>
+        </header>
+
+        <main>
+            <div class="input-group">
+                <input type="text" id="keywordInput" placeholder="Enter keyword (e.g., best running shoes)" autofocus>
+                <button id="analyzeBtn">Analyze</button>
+            </div>
+
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Analyzing search results... This may take a few seconds.</p>
+            </div>
+
+            <div id="error" class="error-message hidden"></div>
+
+            <div id="results" class="results-container hidden">
+                <div class="card summary-card">
+                    <h2>Summary</h2>
+                    <p id="summaryText"></p>
+                </div>
+
+                <div class="grid-row">
+                    <div class="card intent-card">
+                        <h3>Search Intent</h3>
+                        <span id="intentBadge" class="badge"></span>
+                        <p id="intentDifficulty">Difficulty: <span id="difficultyScore"></span>/100</p>
+                    </div>
+
+                    <div class="card competitors-card">
+                        <h3>Top Competitors</h3>
+                        <ul id="competitorsList"></ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
