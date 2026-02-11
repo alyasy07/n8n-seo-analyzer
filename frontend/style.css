@@ -55,7 +55,7 @@ header p {
     font-size: 1.2rem;
 }
 
-/* Input Section */
+
 .input-group {
     display: flex;
     gap: 1rem;
@@ -135,7 +135,7 @@ button:disabled {
     100% { transform: rotate(360deg); }
 }
 
-/* Results Section */
+
 .results-container {
     display: flex;
     flex-direction: column;
