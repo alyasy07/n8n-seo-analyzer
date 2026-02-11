@@ -4,14 +4,12 @@ const errorContainer = document.getElementById('error');
 const keywordInput = document.getElementById('keywordInput');
 const analyzeBtn = document.getElementById('analyzeBtn');
 
-// PLACEHOLDER: Replace with your actual n8n webhook URL
 const N8N_WEBHOOK_URL = 'https://ysnouri.app.n8n.cloud/webhook/analyze';
 
 analyzeBtn.addEventListener('click', async () => {
     const keyword = keywordInput.value.trim();
     if (!keyword) return;
 
-    // Reset UI
     errorContainer.classList.add('hidden');
     resultContainer.classList.add('hidden');
     loadingIndicator.classList.remove('hidden');
@@ -42,28 +40,22 @@ analyzeBtn.addEventListener('click', async () => {
 });
 
 function renderResults(data) {
-    // Expected data structure:
-    // {
-    //   "summary": "...",
-    //   "search_intent": "Informational",
-    //   "difficulty_score": 45,
-    //   "competitors": ["domain1.com", "domain2.com", "domain3.com"]
-    // }
+
 
     document.getElementById('summaryText').textContent = data.summary || 'No summary available.';
     document.getElementById('intentBadge').textContent = data.search_intent || 'Unknown';
-    // Handle Difficulty Score (AI sometimes returns text)
+    
     let score = data.difficulty_score;
     let isNumber = false;
 
     if (typeof score === 'string') {
         const numberMatch = score.match(/\d+/);
-        // If it starts with a number, assume it's a score
+        
         if (numberMatch && parseInt(numberMatch[0]) <= 100) {
             score = numberMatch[0];
             isNumber = true;
         } else {
-            // Keep just the first word (e.g. "High")
+            
             score = score.split('.')[0].split(' ')[0];
         }
     } else if (typeof score === 'number') {
